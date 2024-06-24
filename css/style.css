@@ -1,7 +1,7 @@
 /*
 RESET
 */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,45 +12,58 @@ RESET
 /*
 GENERAL
 */
-.container{
+.container {
     width: 1000px;
     margin: 0 auto;
 }
-.italic{
+
+.italic {
     font-style: italic;
 }
-img{
+
+img {
     width: 100%;
 }
+
+.style-icon-button {
+    color: white;
+    padding-right: 5px;
+}
+
 /*
 HEADER
 */
-header{
+header {
     background-color: #0084FD;
     min-height: 50px;
 }
 
-nav >ul{
+nav>ul {
     list-style: none;
-    
+
 }
-nav >ul >li{
+
+nav>ul>li {
     display: inline-block;
 }
-nav >ul >li >a{
+
+nav>ul>li>a {
     text-decoration: none;
     color: white;
     padding: 5px 10px 5px;
 }
-.header-section{
+
+.header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo-container{
+
+.logo-container {
     padding-top: 5px;
 }
-.header-button{
+
+.header-button {
     border: none;
     border-radius: 20px;
     background-color: white;
@@ -65,64 +78,123 @@ MAIN
 /*
 SEZIONE INTRO
 */
-#intro-section{
+#intro-section {
     margin-top: 50px;
 }
-.my-row{
+
+.my-row {
     display: flex;
     flex-wrap: wrap;
+
 }
-.my-col:first-child{
+
+.my-col:first-child {
     width: calc(((100% / 3) * 2) - 20px);
-   
+    min-height: 320px;
+
 }
-.my-col{
+
+.my-col {
     width: calc((100% / 3) - 20px);
+
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
-    min-height: 300px;
-    background-color:#B5DDFF ;
+    min-height: 320px;
+    background-color: #B5DDFF;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.bigger-col {
+    display: flex;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.half-first-col {
+    padding-top: 20px;
+    width: 50%;
+}
+
+.half-second-col {
+    margin-top: 50px;
+    width: 50%;
+    display: block;
+}
+
+.half-second-col>img {
+    width: 80%;
+    object-fit: contain;
+    display: block;
+}
+
+.appstore-button {
+    margin-top: 20px;
+    padding: 5px 20px 5px;
+    color: white;
+    background-color: #0084FD;
+    border: none;
     border-radius: 20px;
 }
+
+.main-icons {
+    font-size: 5rem;
+    color: #0084FD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.title-of-icon {
+    font-size: 1.7rem;
+    color: #0084FD;
+    padding-bottom: 20px;
+}
+
 /*
 SEZIONE PIANIFICAZIONE
 */
 
-#section-of-plans{
+#section-of-plans {
     background-color: #9792E4;
 }
-.plans-container{
+
+.plans-container {
     display: flex;
-    
+
 
 }
-.plan-container-sx{
+
+.plan-container-sx {
     padding: 20px 40px 20px;
     margin-top: 50px;
     width: 50%;
 }
-.plan-container-dx{
+
+.plan-container-dx {
     padding: 20px 40px 20px;
     margin-top: 150px;
     width: 50%;
 }
-.plan-container-sx >h2{
+
+.plan-container-sx>h2 {
     color: white;
     padding-top: 50px;
     padding-bottom: 30px;
 }
-.plan-container-sx >p{
+
+.plan-container-sx>p {
     color: white;
 }
 
-.plan-dx-card{
+.plan-dx-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
-.plan-dx-card{
+
+.plan-dx-card {
     width: 80%;
     min-height: 250px;
     background-color: white;
@@ -130,20 +202,24 @@ SEZIONE PIANIFICAZIONE
     margin: 0 auto;
     font-size: 0.9rem;
 }
-.plan-dx-card >img{
+
+.plan-dx-card>img {
     padding-top: 15px;
     width: 75%;
-   
+
 }
-.plan-dx-card >h2{
+
+.plan-dx-card>h2 {
     padding: 15px 30px 15px;
-    
- }
-.plan-dx-card >p{
-   padding: 15px 30px 15px;
-   
+
 }
-.menu-arrow-down{
+
+.plan-dx-card>p {
+    padding: 15px 30px 15px;
+
+}
+
+.menu-arrow-down {
     width: 40px;
     height: 40px;
     margin-top: 20px;
@@ -158,53 +234,61 @@ SEZIONE PIANIFICAZIONE
 /*
 SEZIONE CARTE PERSONALI
 */
-.my-row-1-4{
+.my-row-1-4 {
     display: flex;
     flex-wrap: wrap;
 }
-.my-col-1-4{
+
+.my-col-1-4 {
     display: flex;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px 20px 10px;
-    width:100%;
+    width: 100%;
     min-height: 200px;
     background-color: #9792E4;
     border-radius: 20px;
     color: white;
 }
-.my-col-1-4-testimonials{
+
+.my-col-1-4-testimonials {
     text-align: center;
-    width:100%;
+    width: 100%;
     min-height: 200px;
     padding: 30px 20px 10px;
 }
-.my-col-1-4-testimonials >*{
+
+.my-col-1-4-testimonials>* {
     padding-top: 20px;
 }
-.my-col-1-4-testimonials >h1{
+
+.my-col-1-4-testimonials>h1 {
     font-size: 2.7rem;
-    color:#9792E4;
+    color: #9792E4;
 }
-.personal-img{
+
+.personal-img {
     padding-top: 20px;
     padding-bottom: 20px;
-    width:20%;
-    
+    width: 20%;
+
 }
-.personal-img >img{
+
+.personal-img>img {
     width: 192px;
     height: 192px;
     border-radius: 50%;
 }
-.personal-info{
+
+.personal-info {
     width: 80%;
     padding-left: 20px;
     padding-right: 10px;
-    
+
 }
-.info-name{
+
+.info-name {
     padding-top: 30px;
 }
 
@@ -213,15 +297,17 @@ SEZIONE CARTE PERSONALI
 SEZIONE FEATURE
 */
 
-#feature-container{
+#feature-container {
     background-color: #9792E4;
 }
-.my-row-1-6{
+
+.my-row-1-6 {
     display: flex;
     flex-wrap: wrap;
 
 }
-.my-col-1-6{
+
+.my-col-1-6 {
     width: calc((100% / 3) - 40px);
     margin-top: 40px;
     margin-left: 20px;
@@ -231,11 +317,162 @@ SEZIONE FEATURE
     border-radius: 20px;
     min-height: 300px;
 }
-.title-of-features >h1{
+
+.title-of-features>h1 {
     padding-top: 40px;
     padding-bottom: 20px;
     color: white;
     text-align: center;
     font-size: 2.7rem;
 
+}
+
+.my-col-1-6>p {
+    padding: 10px 20px 10px;
+}
+
+.numbers-title {
+    font-size: 3rem;
+    color: #9792E4;
+}
+
+.sub-title-col-1-6 {
+    font-size: 1.5rem;
+    color: #9792E4;
+
+}
+
+.button-col-1-6 {
+    border: none;
+    border-radius: 20px;
+    background-color: #9792E4;
+    color: white;
+    margin-left: 20px;
+    padding: 10px 40px 10px;
+    cursor: pointer;
+}
+
+/*
+SEZIONE ABOUT US
+*/
+.about-us-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.about-us-sx {
+    width: 70%;
+    padding: 15px 50px 15px;
+}
+
+.about-us-sx>p {
+    padding-top: 50px;
+    line-height: 2.5;
+}
+
+.about-us-sx>h1 {
+    color: #9792E4;
+    font-size: 5rem;
+}
+
+.about-us-dx {
+    width: 30%;
+    padding: 15px 50px 15px;
+}
+
+.about-us-dx>p {
+    color: #9792E4;
+    font-size: 1.7rem;
+}
+
+.img-cont-about-us {
+    min-height: 200px;
+    position: relative;
+
+}
+
+.img-cont-about-us>img {
+    border-radius: 50%;
+}
+
+.quote-img {
+    color: #9792E4;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.linkedin-button {
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: #9792E4;
+    margin-top: 15px;
+    padding: 5px 10px 5px;
+    cursor: pointer;
+}
+
+
+/*
+FOOTER
+*/
+.main-footer {
+    background-color: #9792E4;
+}
+
+.advs-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.advs-container>p {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+
+}
+
+.advs-container>h1 {
+    padding-top: 40px;
+    font-size: 2.7rem;
+    color: white;
+}
+
+.advs-container>button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#adv-text-info {
+    font-size: 5rem;
+    color: #FDC15F;
+}
+
+.footer-button {
+    padding: 25px 80px 25px;
+    border: none;
+    border-radius: 40px;
+    color: #9792E4;
+    background-color: white;
+    cursor: pointer;
+}
+
+.link-footer>ul {
+    padding-bottom: 50px;
+}
+
+.link-footer>ul>li {
+    display: inline;
+    color: white;
+}
+
+.link-footer>ul>li>a {
+    color: white;
+
+}
+
+.last-footer {
+    background-color: #333333;
 }
