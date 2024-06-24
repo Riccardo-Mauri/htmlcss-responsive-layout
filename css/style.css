@@ -1,0 +1,58 @@
+/*
+RESET
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT sans';
+}
+
+
+/*
+GENERAL
+*/
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*
+HEADER
+*/
+header{
+    background-color: #0084FD;
+    min-height: 50px;
+}
+
+nav >ul{
+    list-style: none;
+    
+}
+nav >ul >li{
+    display: inline-block;
+}
+nav >ul >li >a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px 5px;
+}
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container{
+    padding-top: 5px;
+}
+.header-button{
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px 10px 5px;
+    cursor: pointer;
+}
+
+/*
+MAIN
+*/

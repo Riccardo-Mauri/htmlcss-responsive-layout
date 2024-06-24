@@ -1,0 +1,20 @@
+/*
+RESPONSIVE MOBILE
+*/
+@media screen  and(min-width: 576px) {
+    
+}
+
+/*
+RESPONSIVE TABLET
+*/
+
+
+/*
+RESPONSIVE DEESKTOP
+*/
+@media screen and (min-width:992px) {
+    .hamburger{
+        display: none;
+    }
+}
