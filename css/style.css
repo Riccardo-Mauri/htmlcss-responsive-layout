@@ -16,7 +16,12 @@ GENERAL
     width: 1000px;
     margin: 0 auto;
 }
-
+.italic{
+    font-style: italic;
+}
+img{
+    width: 100%;
+}
 /*
 HEADER
 */
@@ -56,3 +61,94 @@ nav >ul >li >a{
 /*
 MAIN
 */
+#intro-section{
+    margin-top: 50px;
+}
+.my-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-col:first-child{
+    width: calc(((100% / 3) * 2) - 20px);
+   
+}
+.my-col{
+    width: calc((100% / 3) - 20px);
+    margin-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    min-height: 300px;
+    background-color:#B5DDFF ;
+    border-radius: 20px;
+}
+
+
+#section-of-plans{
+    background-color: #9792E4;
+}
+.plans-container{
+    display: flex;
+    
+
+}
+.plan-container-sx{
+    padding: 20px 40px 20px;
+    margin-top: 50px;
+    width: 50%;
+}
+.plan-container-dx{
+    padding: 20px 40px 20px;
+    margin-top: 150px;
+    width: 50%;
+}
+.plan-container-sx >h2{
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.plan-container-sx >p{
+    color: white;
+}
+
+
+
+
+
+.plan-dx-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.plan-dx-card{
+    width: 80%;
+    min-height: 250px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+}
+.plan-dx-card >img{
+    padding-top: 15px;
+    width: 75%;
+   
+}
+.plan-dx-card >h2{
+    padding: 15px 30px 15px;
+    
+ }
+.plan-dx-card >p{
+   padding: 15px 30px 15px;
+   
+}
+.menu-arrow-down{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #9792E4;
+    padding: 10px 10px 10px;
+    text-align: center;
+
+}
