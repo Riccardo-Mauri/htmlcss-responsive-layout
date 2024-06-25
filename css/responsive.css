@@ -1,20 +1,105 @@
-/*
-RESPONSIVE MOBILE
-*/
-@media screen  and(min-width: 576px) {
-    
+@media screen and (max-width:576px) {
+    nav {
+        display: none;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .my-col:first-child {
+        width: 100%;
+        display: block;
+    }
+
+    .my-col:first-child * {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .my-col {
+        width: 100%;
+        display: block;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .appstore-button {
+        font-size: 1.5em;
+    }
+
+    .appstore-button>span {
+        display: inline-block;
+    }
+
+    .plans-container {
+        display: block;
+        width: 100%;
+    }
+
+    .plan-container-sx {
+        width: 100%;
+    }
+
+    .plan-container-dx {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .my-col-1-4 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .my-row-1-6 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .my-col-1-6 {
+       width:calc(100% - 40px);
+    }
+    .about-us-container{
+        display: block;
+        width: 100%;
+    }
+    .about-us-sx {
+        width: 100%;
+        display: block;
+    }
+    .about-us-dx {
+        width: 100%;
+        display: block;
+    }
 }
+
+
 
 /*
 RESPONSIVE TABLET
 */
-
+@media screen and (min-width: 576px) {
+    nav {
+        display: none;
+    }
+}
 
 /*
 RESPONSIVE DEESKTOP
 */
 @media screen and (min-width:992px) {
-    .hamburger{
+    .hamburger {
         display: none;
+    }
+
+    nav {
+        display: block;
     }
 }
