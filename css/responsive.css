@@ -85,11 +85,68 @@
 /*
 RESPONSIVE TABLET
 */
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 100%;
+    }
     nav {
         display: none;
     }
-}
+    .logo{
+        padding-left: 20px;
+    }
+    .hamburger{
+        padding-right: 20px;
+    }
+    .my-col:first-child{
+        width: calc(((100% / 3) * 2) - 20px);
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    .my-col:first-child >.half-first-col{
+       width: 100%;
+    }
+    .my-col{
+        width: calc((100% / 3) - 20px);
+    }
+    .plans-container{
+        display: block;
+        width: 100%;
+    }
+    .plan-container-sx{
+        width: 100%;
+        
+    }
+    .plan-container-dx{
+        width: 100%;  
+    }
+    .my-col-1-4 {
+        margin: 20px 20px 20px;
+    }
+    .my-col-1-4 >.personal-img >img{
+        object-fit: cover;
+    }
+    .my-col-1-4 >.personal-info{
+        padding-left: 100px;
+    }
+    .my-row-1-6 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .my-col-1-6 {
+       width:calc((100% / 2) - 40px);
+    }
+    .about-us-sx {
+        width: 50%;
+        
+    }
+    .about-us-dx {
+        width: 50%;
+       
+    }
+    }
+
 
 /*
 RESPONSIVE DEESKTOP
